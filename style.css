@@ -1,0 +1,74 @@
+.winning-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, .7);
+    align-items: center;
+    color: white;
+    font-size: 75px;
+    flex-direction: column;
+}
+
+.winning-message-text {
+    margin-top: 50px;
+}
+
+.reset-btn {
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.winning-message.show {
+    display: flex;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+p {
+    font-size: 75px;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.cell {
+    display: flex;
+    width: 98px;
+    height: 100px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    border-bottom: none;
+    border-right: none;
+    cursor: pointer;
+}
+
+.cell:nth-child(-n+3) {
+    border-top: none;
+}
+
+.cell:nth-child(1), 
+.cell:nth-child(4), 
+.cell:nth-child(7) {
+    border-left: none;
+}
