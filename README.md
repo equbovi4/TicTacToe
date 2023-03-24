@@ -1,4 +1,4 @@
-# TicTacToe
+# Tic Tac Toe
 
 **Program video**
 
